@@ -124,7 +124,7 @@ spec:
             initialDelaySeconds: 5
           volumeMounts:
           - name: frontend-config
-            mountPath: /etc/nginx/conf.d/nginx.conf
+            mountPath: /etc/nginx/nginx.conf
             subPath: nginx.conf
       volumes:
       - name: frontend-config
