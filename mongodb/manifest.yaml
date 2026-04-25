@@ -30,7 +30,9 @@ metadata:
 spec:
   clusterIP: None
   selector:
+    project: roboshop
     component: mongodb
+    tier: database
   ports:
     - protocol: TCP
       port: 27017
@@ -68,6 +70,7 @@ spec:
   - metadata:
       name: mongodb
     spec:
+      storageClassName: "ebs-roboshop"
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
