@@ -61,7 +61,7 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: saikumar19/mongodb:v2
+        image: saikumar19/mongodb:v1
         volumeMounts:
         - name: mongodb
           mountPath: /data/db
