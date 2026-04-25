@@ -10,7 +10,9 @@ metadata:
     tier: database
 spec:
   selector:
+    project: roboshop
     component: rabbitmq
+    tier: database
   ports:
     - protocol: TCP
       port: 5672
