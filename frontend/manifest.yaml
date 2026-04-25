@@ -136,8 +136,8 @@ spec:
     tier: web  
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 8080
+      port: 80 # service port
+      targetPort: 8080  # container port
 
 ---
 
