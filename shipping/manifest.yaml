@@ -58,12 +58,14 @@ spec:
             port: liveness-port
           failureThreshold: 1
           periodSeconds: 15
+          initDelaySeconds: 60
         livenessProbe:
           httpGet:
             path: /health
             port: liveness-port
           failureThreshold: 1
           periodSeconds: 15 
+          initDelaySeconds: 60
 ---
 
 apiVersion: v1
